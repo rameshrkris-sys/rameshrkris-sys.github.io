@@ -1,61 +1,95 @@
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
+/* Import a modern, professional font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #f9f9f9, #eef2f3);
+  --primary-color: #4a90e2;
+  --secondary-color: #50c878;
+  --text-color: #333;
+  --card-bg: #fff;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  --radius: 12px;
+}
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-color);
   line-height: 1.6;
-  color: #333;
+  padding: 40px;
 }
 
-/* Header */
-header {
-  background: #282c34;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  margin: 0.5rem 0 0;
-  font-size: 1.2rem;
-}
-
-/* Sections */
-main {
-  max-width: 800px;
+.container {
+  max-width: 900px;
   margin: auto;
-  padding: 2rem 1rem;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem 3rem;
+  animation: fadeIn 1.2s ease;
 }
 
-section {
-  margin-bottom: 2.5rem;
-}
-
-h2 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 0.5rem;
+h1, h2, h3 {
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
-/* Links */
+p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
 a {
-  color: #0066cc;
+  color: var(--secondary-color);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--primary-color);
 }
 
-/* Footer */
+button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: var(--secondary-color);
+  transform: scale(1.05);
+}
+
 footer {
-  background: #f4f4f4;
   text-align: center;
-  padding: 1rem;
   margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Subtle entry animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  .container {
+    padding: 1.5rem;
+  }
 }
