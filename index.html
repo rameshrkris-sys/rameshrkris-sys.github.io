@@ -1,100 +1,66 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Page 🌟</h1>
+      <p>A colorful and modern personal website built with GitHub Pages.</p>
+      <button onclick="window.location.href='#about'">Learn More</button>
+    </div>
+  </header>
 
-/* Body */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f7f9fc;
-  color: #333;
-  line-height: 1.6;
-}
+  <!-- Main Container -->
+  <main class="container">
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m <strong>Your Name</strong>. I created this page to showcase my projects, share ideas, 
+        and connect with people. This site is built with a simple design that’s clean yet colorful.
+      </p>
+    </section>
 
-/* Header */
-header {
-  background: linear-gradient(135deg, #4f46e5, #3b82f6);
-  color: white;
-  text-align: center;
-  padding: 3rem 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>🚀 Project One</h3>
+          <p>A cool project I worked on. It does amazing things and helped me learn a lot.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="card">
+          <h3>🌈 Project Two</h3>
+          <p>This project focuses on creativity and design. It’s vibrant and fun to use.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="card">
+          <h3>📚 Project Three</h3>
+          <p>A research-based project where I explored some exciting new ideas.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </section>
 
-header h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0.5rem;
-}
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Want to reach out? Feel free to <a href="mailto:yourname@email.com">send me an email</a>.
+      </p>
+    </section>
+  </main>
 
-header p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-/* Navigation */
-nav {
-  margin-top: 1rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #ffd700;
-}
-
-/* Main Content */
-main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-/* Card Style Sections */
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-}
-
-h2 {
-  color: #4f46e5;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
-}
-
-/* Links */
-a {
-  color: #2563eb;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  background: #111827;
-  color: #ccc;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Your Name | Built with ❤️ and GitHub Pages</p>
+  </footer>
+</body>
+</html>
